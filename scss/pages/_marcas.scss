@@ -1,0 +1,13 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+@import "../abstracts/map";
+
+.presentacionLogosMarcas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.presentacionLogosMarcas img {
+    padding: 60px;
+}

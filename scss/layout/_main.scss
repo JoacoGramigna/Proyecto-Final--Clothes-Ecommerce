@@ -1,0 +1,74 @@
+@import "../variables/variables";
+@import "../abstracts/map";
+@import "../abstracts/mixin";
+
+.containerCarousel{
+    margin-top: map-get($espacios-layout, espacio-mayor );
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.tituloCard1{
+    @include secciones-main;
+}
+
+.containerCards1{
+    @include cards-main;
+}
+
+.containerCards1{
+    .card{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.tituloCard2{
+    @include secciones-main;
+}
+
+.logosMarcas{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+    img{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.containerCards2{
+    @include cards-main;
+}
+
+.containerCards2{
+    .card{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.tituloPagos{
+    h1{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 30px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+}
+
+.logosPagos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,33 @@
+@import "../variables/variables";
+@import "../abstracts/map";
+
+.logoHeader{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 180px;
+        height: 160px;
+        margin-bottom: map-get($espacios-layout, espacio-menor);
+        margin-top: map-get($espacios-layout, espacio-mayor);
+    }
+}
+
+.edit-nav{
+    background-color: $color-primary;
+}
+
+.dropdown-menu{
+    background-color: $color-primary;
+    .dropdown-menu i{
+        padding-right: 10px;
+        .dropdown-menu a:hover{
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    }
+}
+
+.btn{
+    color: $color-secondary;
+    outline: 1px solid #5C5D60;
+}

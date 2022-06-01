@@ -1,0 +1,43 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+
+/* Paginas de venta */
+
+.filtrosMenu{
+    display: none
+}
+
+.containerGridArticulos {
+    @include containerGridArticulos;
+}
+
+.filtroArticulos {
+    grid-area: filtroArticulos;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin: 0 20px 20px;
+    div{
+        margin: 20px 0px 20px 20px;
+    }
+}
+
+.tituloFiltro {
+    @include tituloFiltro;
+}
+
+.columnaIndumentarias {
+    @include columnaIndumentarias;
+}
+
+.filtroArticulos p {
+    @include filtroArticulos;
+}
+
+.articulos{
+    @include cards-articulos;
+}
+
+.paginasNum {
+    @include paginasNum;
+}

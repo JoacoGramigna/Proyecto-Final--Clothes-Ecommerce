@@ -1,0 +1,73 @@
+@import "../variables/variables";
+@import "../abstracts/map";
+
+.navFooterAcordeon {
+    display: none;
+}
+
+.gridContainerFooter{
+    display: grid;
+    grid-template-areas:
+        "navFooter navFooter"
+        "botonTop botonTop";
+    background-color: $color-primary;
+}
+
+.navFooter{
+    grid-area: navFooter;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    h2{
+        color: $color-secondary;
+        font-size: 25px;
+    }
+}
+
+.institucional a{
+    text-decoration: none;
+}
+
+.datosInstitucionales{
+    @include secciones-nav;
+}
+
+.ayuda a{
+    text-decoration: none;
+}
+
+.datosAyuda{
+    @include secciones-nav;
+}
+
+.redesSociales a{
+    text-decoration: none;
+}
+
+.datosRedesSociales{
+    @include secciones-nav;
+}
+
+.atencionAlCliente a{
+    text-decoration: none;
+}
+
+.datosAtencionAlCliente{
+    @include secciones-nav;
+}
+
+.botonTop{
+    grid-area: botonTop;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: end;
+    margin-right: 130px;
+    margin-bottom: 15px;
+    .fa-solid{
+        color: $color-secondary;
+        font-size: 35px;
+    }
+}

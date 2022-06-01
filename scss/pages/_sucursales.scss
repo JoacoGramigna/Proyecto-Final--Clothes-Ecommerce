@@ -1,0 +1,19 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+@import "../abstracts/map";
+
+.mapa{
+    text-align: center;
+    margin-top: map-get($espacios-layout, espacio-mayor);
+    margin-bottom: map-get($espacios-layout, espacio-menor);
+}
+
+.sucursales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sucursales div{
+    margin: 20px;
+}

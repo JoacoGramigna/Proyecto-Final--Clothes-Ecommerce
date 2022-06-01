@@ -1,0 +1,8 @@
+@import "../variables/variables";
+
+.lineaTitulo{
+    margin-top: 15px;
+    color: $color-secondary;
+    margin-top: map-get($espacios-layout, espacio-mayor);
+    margin-bottom: map-get($espacios-layout, espaciomenor);
+}

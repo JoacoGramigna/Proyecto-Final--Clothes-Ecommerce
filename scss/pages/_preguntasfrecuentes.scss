@@ -1,0 +1,23 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+@import "../abstracts/map";
+
+.preguntasDestacadas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    div{
+        margin: 20px;
+    }
+}
+
+.parrafoPreguntas {
+    margin: 0 200px;
+    margin-bottom: map-get($espacios-layout, espacio-mayor);
+}
+
+.parrafoPreguntas h2 {
+    font-size: 22px;
+}

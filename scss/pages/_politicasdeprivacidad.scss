@@ -1,0 +1,8 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+@import "../abstracts/map";
+
+.parrafoPoliticas {
+    margin: 0 200px;
+    margin-bottom: map-get($espacios-layout, espacio-mayor);
+}

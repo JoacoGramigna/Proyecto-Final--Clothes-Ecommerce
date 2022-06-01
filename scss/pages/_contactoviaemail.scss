@@ -1,0 +1,63 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+@import "../abstracts/map";
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formularioContactoDatos{
+    display: grid;
+    grid-template-areas:
+        "datosIzquierda datosDerecha"
+        "datosCheckbox datosCheckbox";
+    gap: 20px;
+    background-color: #FBE3D9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 700px;
+}
+
+.datosIzquierda {
+    grid-area: datosIzquierda;
+    input{
+        outline: none;
+        background: transparent;
+        border: none;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #5C5D60;
+        padding-bottom: 10px;
+        font-size: 15px;
+        width: 300px;
+    }
+}
+
+.datosDerecha {
+    grid-area: datosDerecha;
+    input{
+        outline: none;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #5C5D60;
+        padding-bottom: 10px;
+        font-size: 15px;
+        width: 300px;
+    }
+}
+
+.botonEnviarCorreo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    button{
+        cursor: pointer;
+        background: #FBE3D9;
+        border: none;
+        font-size: 17px;
+        border-radius: 10px;
+        padding: 10px 40px 10px 40px;
+    }
+}

@@ -1,0 +1,55 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+@import "../abstracts/map";
+
+.containerPagos{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+
+.containerGridPagos{
+    display: grid;
+    grid-template-areas:
+        "tituloCredito"
+        "credito"
+        "tituloDebito"
+        "debito"
+        "tituloMercadoPago"
+        "mercadoPago";
+    gap: 40px;
+}
+
+.tituloCredito {
+    grid-area: tituloCredito;
+}
+
+.credito {
+    grid-area: credito;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tituloDebito {
+    grid-area: tituloDebito;
+}
+
+.debito {
+    grid-area: debito;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tituloMercadoPago {
+    grid-area: tituloMercadoPago;
+}
+
+.mercadoPago {
+    grid-area: mercadoPago;
+    display: flex;
+}
+
+.containerPagos img {
+    width: 200px;
+    height: 150px;
+}

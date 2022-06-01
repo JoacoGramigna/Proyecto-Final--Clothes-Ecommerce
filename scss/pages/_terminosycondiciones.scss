@@ -1,0 +1,15 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+@import "../abstracts/map";
+
+.parrafoTerminos div h2 {
+    font-size: 20px;
+}
+
+.parrafoTerminos {
+    margin: 0 200px;
+}
+
+.parrafoTerminos div{
+    margin-bottom: map-get($espacios-layout, espacio-mayor);
+}

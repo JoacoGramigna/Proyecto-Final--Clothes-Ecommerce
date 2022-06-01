@@ -1,0 +1,112 @@
+@media screen and (max-width: 991px) {
+    .navFooter {
+        display: none;
+    }
+
+    .gridContainerFooter {
+        display: unset;
+    }
+
+    .navFooterAcordeon {
+        display: unset;
+    }
+
+    .accordion-item {
+        background-color: #FBE3D9;
+    }
+
+    .accordion-button {
+        background-color: #FBE3D9;
+    }
+
+    .accordion-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accordion-body a {
+        text-decoration: none;
+        color: #5C5D60;
+        margin: 3px;
+    }
+
+    .accordion-body a:hover {
+        text-decoration: underline;
+    }
+
+    .ayuda {
+        grid-area: ayuda;
+    }
+
+    .atencionAlCliente {
+        grid-area: atencionAlCliente;
+    }
+
+    .redesSociales {
+        grid-area: redesSociales;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .redesSociales h2 {
+        display: none;
+    }
+
+    .botonTop {
+        display: none;
+    }
+
+    .formularioContactoDatos {
+        grid-template-areas:
+            "datosIzquierda"
+            "datosDerecha"
+            "datosCheckbox";
+        width: 350px;
+    }
+
+    .parrafoPreguntas {
+        margin: 0 100px;
+    }
+
+    .parrafoPoliticas {
+        margin: 0 100px;
+    }
+
+    .parrafoTerminos {
+        margin: 0 100px;
+    }
+
+    .filtroArticulos {
+        display: none;
+    }
+
+    .containerGridArticulos {
+        display: grid;
+        grid-template-columns: unset;
+        grid-template-areas:
+            "filtrosMenu"
+            "articulos"
+            "articulos"
+            "paginasNum";
+    }
+
+    .filtrosMenu{
+        display: unset;
+        grid-area: filtrosMenu;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .filtrosMenu button{
+        background-color: #FBE3D9;
+        outline: 1px solid #FBE3D9;
+        border-color: #FBE3D9;
+        padding: 5px 30px;
+        border-radius: 5px;
+    }
+
+    .articulos {
+        justify-content: center;
+    }
+}

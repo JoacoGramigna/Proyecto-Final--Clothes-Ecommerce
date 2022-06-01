@@ -1,0 +1,109 @@
+@import "../variables/variables";
+
+@mixin secciones-nav {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    a{
+        margin-top: 5px;
+    color: $color-secondary;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+@mixin secciones-main {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    h1{
+        font-size: 30px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+}
+
+@mixin cards-main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .card{
+        margin: 10px;
+        img{
+            border-bottom: 1px solid rgb(211, 211, 211);
+            width: 238px;
+            height: 299px;
+        }
+    }
+}
+
+@mixin boton-volver {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 218px;
+    a {
+        color: $color-secondary;
+        font-size: 18px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@mixin containerGridArticulos {
+    display: grid;
+    grid-template-columns: 300px ;
+    grid-template-areas:
+        "filtroArticulos articulos"
+        "filtroArticulos articulos"
+        "filtroArticulos articulos"
+        "paginasNum paginasNum";
+}
+
+@mixin tituloFiltro {
+    background-color: #FBE3D9;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+@mixin columnaIndumentarias {
+    background-color: #FBE3D9;
+    border-radius: 20px;
+    max-width: 250px;
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@mixin filtroArticulos {
+    margin-top: 20px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@mixin cards-articulos{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        margin: 0 15px 30px;
+        img{
+            border-bottom: 1px solid rgb(211, 211, 211);
+            width: 222px;
+            height: 299px;
+        }
+    }
+}
+
+@mixin paginasNum{
+    grid-area: paginasNum;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
